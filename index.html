@@ -260,8 +260,8 @@
     <p class="info">Click on a window to reveal your daily capybara!</p>
 
     <script>
-        const AVAILABLE_IMAGES = [1, 2, 3, 4, 5, 6];
-        const TOTAL_DAYS = 24;
+        const AVAILABLE_IMAGES = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25];
+        const TOTAL_DAYS = 25;
 
         function getToday() {
             const now = new Date();
@@ -343,7 +343,7 @@
             const calendar = document.getElementById('calendar');
             const opened = getOpenedDays();
 
-            const fixedOrder = [24, 7, 15, 3, 19, 11, 1, 22, 8, 16, 4, 20, 12, 2, 23, 9, 17, 5, 21, 13, 6, 14, 10, 18];
+            const fixedOrder = [24, 7, 15, 3, 19, 11, 1, 22, 8, 16, 4, 20, 12, 2, 23, 9, 17, 5, 21, 13, 6, 14, 10, 18, 25];
 
             fixedOrder.forEach(day => {
                 const isOpenable = canOpen(day);
